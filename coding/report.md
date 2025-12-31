@@ -1,8 +1,8 @@
-### This report is done by Bilal AL BENNI and Sasha KASSIS
+This report is done by Bilal AL BENNI and Sasha KASSIS
 
-## Session 1: Annotation of coding sequences
+Session 1: Annotation of coding sequences
 
-##1.1 How we solved the exercises:
+1.1 How we solved the exercises:
 
 ###  EX1: We unzipped the reference proteome and used makeblastdb to formal it into searchable protein database. The process made 15719 sequences.
 
