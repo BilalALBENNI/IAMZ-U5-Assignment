@@ -22,3 +22,4 @@
 **3:** AlphaFold engine wasn't working well showing no results at first then it worked normally.
 **4:** We rewatched the recorded session and relied on AI when we got stuck.
  
+## Session 3:
