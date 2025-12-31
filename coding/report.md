@@ -1,6 +1,6 @@
 This report is done by Bilal AL BENNI and Sasha KASSIS
 
-Session 1: Annotation of coding sequences
+## Session 1: Annotation of coding sequences
 
 1.1 How we solved the exercises:
 
@@ -53,19 +53,19 @@ hmmsearch test.hmm uniprot_Atha.fasta > hmm_report.txt
 
 ### EX10: We retrieved the 3D structure from AlfaFold Databvase using ID Q9ZTZ8. It showed high confidence (pLDDT > 90) in core domain and lower confidence in disoredered regions.
 
-##1.2 Problems we faced:
+1.2 Problems we faced:
 
-### 1: Git Synchronization erros because I edited the file from Github and from my machine so I asked Gemini about the error and AI suggested to use git push -f command and it works. We learned a new command :)
-### 2: clustalo on test.faa falied so we asked Gemini and it recommended to create another file with related sequences derived from BLAST results so that we can comapare the two sequences.
-### 3: AlphaFold engine wasn't working well showing no results at first then it worked normally.
-### 4: We rewatched the recorded session and relied on AI when we got stuck.
+1: Git Synchronization erros because I edited the file from Github and from my machine so I asked Gemini about the error and AI suggested to use git push -f command and it works. We learned a new command :)
+2: clustalo on test.faa falied so we asked Gemini and it recommended to create another file with related sequences derived from BLAST results so that we can comapare the two sequences.
+3: AlphaFold engine wasn't working well showing no results at first then it worked normally.
+4: We rewatched the recorded session and relied on AI when we got stuck.
 
-##References
+References
 
-    BLAST Help/FAQ, visited 31/12/2025.
+BLAST Help/FAQ, visited 31/12/2025.
 
-    QuickGO Term GO:0048366, visited 31/12/2025.
+QuickGO Term GO:0048366, visited 31/12/2025.
 
-    AlphaFold Protein Structure Database, visited 31/12/2025.
- 
+AlphaFold Protein Structure Database, visited 31/12/2025.
+
 ## Session 3:
