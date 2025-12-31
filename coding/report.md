@@ -8,15 +8,18 @@ Session 1: Annotation of coding sequences
 
 ```bash makeblastdb -dbtype prot -in uniprot_Atha.fasta```
 
+
 ### EX2: We performed a blastp search using the ARF6 protein sequence and blastx search using the corresponding transcript sequence against the formatted database. The outputs were saved to test.faa.blast and test.fna.blast. 
 
 ```blastp -query test.faa -db uniprot_Atha.fasta -out test.faa.blast
 blastx -query test.fna -db uniprot_Atha.fasta -out test.fna.blast```
 
+
 ### EX3: We examined the default pairwise alignment format, which shows specific aa matches between the query adn subject.
 
 ```blastp -query test.faa -db uniprot_Atha.fasta -out test.faa.blast
 blastx -query test.fna -db uniprot_Atha.fasta -out test.fna.blast```
+
 
 ### EX4: We compared blastp and blastx and they showed identical top hits.
 
@@ -24,11 +27,14 @@ blastx -query test.fna -db uniprot_Atha.fasta -out test.fna.blast```
 
 ```psiblast -query test.faa -db uniprot_Atha.fasta -num_iterations 3 -out_pssm profile.out```
 
+
 ### EX6: We created multiple sequence alignment using clustalo then we built an HMM with hmmbuild and searched for the proteome sing hmmsearch to identify family members.
 
 ```clustalo -i family.fasta -o test_aligned.aln --outfmt=fasta
 hmmbuild test.hmm test_aligned.aln
 hmmsearch test.hmm uniprot_Atha.fasta > hmm_report.txt```
+
+
 ### EX7: We identifies structural homologs in the PDB using HHpred we server. We found high-probability matches to ARD DNA-binding domains.
 
 ### EX8: We used eggNOG mapper to identify that our protein belongs to ARF6 group and is categorized under transcription category (K)
