@@ -32,3 +32,4 @@ The primary challenge in this session involved the transition from SAM to BAM/CR
 ### Li, H. (2013). Aligning sequence reads, clone sequences and assembly contigs with BWA-MEM. arXiv:1303.3997.
 
 ### Garrison, E., & Marth, G. (2012). Haplotype-based variant detection from short-read sequencing. arXiv:1207.3907.
+
