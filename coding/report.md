@@ -70,7 +70,3 @@ hmmsearch test.hmm uniprot_Atha.fasta > hmm_report.txt
 ### QuickGO Term GO:0048366, visited 31/12/2025.
 
 ### AlphaFold Protein Structure Database, visited 31/12/2025.
-
-# Session 3:
----
-
