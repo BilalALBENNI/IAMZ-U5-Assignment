@@ -37,5 +37,4 @@ Outputs: Sample dendrogram, Scale-free topology plots, and the Module-trait asso
 
 The primary difficulty was a system-level configuration issue where RStudio could not install the WGCNA package due to a missing libcurl library on the Linux host. This required manual intervention via the terminal to install libcurl4-openssl-dev before the R analysis could proceed.
 ### 3.4 Proposed Experiment:
-
 This co-expression analysis could be applied to a study of heat stress response in different cereal ecotypes. By comparing modules between heat-stressed and control groups, one could identify "thermoprotective" hub genes that drive survival in specific varieties.
