@@ -6,7 +6,7 @@ This report is done by Bilal AL BENNI and Sasha KASSIS
 ## 1.1 How we solved the exercises:
 
 
-###  EX1: We unzipped the reference proteome and used makeblastdb to formal it into searchable protein database. The process made 15719 sequences.
+###  EX1: We unzipped the reference proteome and used makeblastdb to formal it into searchable protein database. The process made 15719 sequences. I also noted that the E-value is calculated as E=m×n×2−S, where n is the database size. This means that as our database grows to 15,719 sequences, the probability of finding a random match increases, requiring a lower E-value for a result to be truly significant.
 
 ```bash
 makeblastdb -dbtype prot -in uniprot_Atha.fasta
@@ -29,7 +29,7 @@ blastx -query test.fna -db uniprot_Atha.fasta -out test.fna.blast
 ```
 
 
-### EX4: We compared blastp and blastx and they showed identical top hits.
+### EX4: We compared blastp and blastx and they showed identical top hits. The blastx search operated within a much larger effective search space (approx. 4.5 billion) because it translates the nucleotide query into six potential reading frames. This explains why we saw higher E-values in the blastx results compared to the direct blastp protein search.
 
 ### EX5: We ran psiblast for 3 iterations to create a PPSM saved in profile.out.
 
@@ -46,6 +46,7 @@ hmmbuild test.hmm test_aligned.aln
 hmmsearch test.hmm uniprot_Atha.fasta > hmm_report.txt
 ```
 
+The resulting HMM model had a length of 670 consensus positions (mlen) derived from an alignment of 1,361 columns (alen). It showed a relative entropy of 1.43 and an information content of 0.590 bits per position, providing a strong structural signature for the ARF family.
 
 ### EX7: We identifies structural homologs in the PDB using HHpred we server. We found high-probability matches to ARD DNA-binding domains.
 
@@ -53,7 +54,7 @@ hmmsearch test.hmm uniprot_Atha.fasta > hmm_report.txt
 
 ### EX9: We used QuickGO to compared leaf development across species. Arabidopsis showed more experimental evidence 137 products than Prunus 4 products and Zea mays 5 products.
 
-### EX10: We retrieved the 3D structure from AlfaFold Databvase using ID Q9ZTZ8. It showed high confidence (pLDDT > 90) in core domain and lower confidence in disoredered regions.
+### EX10: We retrieved the 3D structure from AlfaFold Databvase using ID Q9ZTZ8. It showed high confidence (pLDDT > 90) in core domain and lower confidence in disoredered regions. While the AlphaFold model for ARF6 (Q9ZTZ8) showed 100% identity and high confidence, I also compared it to PDB template 4dui.1.A, which had a sequence identity of 55.61% and a GMQE score of 0.77.
 
 ## 1.2 Problems we faced:
 
